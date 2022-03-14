@@ -40,6 +40,88 @@
 
 div {
   border: 1px solid grey;
-  margin: 5px;
+  margin: 0px;
   padding: 5px;
+  color: white;
+}
+
+#floor-plan {
+  display: grid;
+  border: none;
+  grid-template-rows: repeat(10, 5vh);
+  grid-template-columns: repeat(10, 5vw);
+  grid-template-areas: 
+  "Bedroom1 Bedroom1 Bedroom1 Bedroom1 LivingRoom LivingRoom LivingRoom LivingRoom Kitchen Kitchen"
+  "Bedroom1 Bedroom1 Bedroom1 Bedroom1 LivingRoom LivingRoom LivingRoom LivingRoom Kitchen Kitchen"
+  "Bedroom1 Bedroom1 Bedroom1 Bedroom1 LivingRoom LivingRoom LivingRoom LivingRoom Kitchen Kitchen"
+  "Bedroom1 Bedroom1 Bedroom1 Bedroom1 LivingRoom LivingRoom LivingRoom LivingRoom Kitchen Kitchen"
+  "FullBath FullBath FullBath FullBath LivingRoom LivingRoom LivingRoom LivingRoom Kitchen Kitchen"
+  "FullBath FullBath FullBath FullBath LivingRoom LivingRoom LivingRoom LivingRoom Kitchen Kitchen"
+  "Bedroom2 Bedroom2 Bedroom2 Bedroom2 HalfBath HalfBath Bedroom3 Bedroom3 Bedroom3 Bedroom3"
+  "Bedroom2 Bedroom2 Bedroom2 Bedroom2 HalfBath HalfBath Bedroom3 Bedroom3 Bedroom3 Bedroom3"
+  "Bedroom2 Bedroom2 Bedroom2 Bedroom2 HalfBath HalfBath Bedroom3 Bedroom3 Bedroom3 Bedroom3"
+  "Bedroom2 Bedroom2 Bedroom2 Bedroom2 HalfBath HalfBath Bedroom3 Bedroom3 Bedroom3 Bedroom3"
+  ;
+}
+
+
+#kitchen {
+  grid-area: Kitchen;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6, 1fr);
+  background-color: darkgoldenrod;
+  grid-template-areas: 
+  "Oven Sink"
+  "Kitchen Kitchen"
+  "Kitchen Kitchen"
+  "Kitchen Kitchen"
+  "Kitchen Kitchen"
+  "Kitchen Kitchen"
+  
+  ;
+}
+
+#bedroom1 {
+  grid-area: Bedroom1;
+  background-color: #89CFF0
+}
+
+#bedroom2 {
+  grid-area: Bedroom2;
+  background-color: #89CFF0;
+}
+
+#bedroom3 {
+  grid-area: Bedroom3;
+  background-color: #89CFF0;
+}
+
+#bath0 {
+  grid-area: FullBath;
+  background-color: green;
+}
+
+#bath1 {
+  grid-area: HalfBath;
+  background-color: green;
+}
+
+#living-room {
+  grid-area: LivingRoom;
+  background-color: tan;
+}
+
+#root {
+  border: none;
+}
+
+#oven {
+  grid-area: Oven;
+  background-color: #E0115F;
+}
+
+#sink {
+  grid-area: Sink;
+  background-color: #A52A2A;
 }

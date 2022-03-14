@@ -1,6 +1,6 @@
 function Sink (props) {
   return (
-    <div>
+    <div id={props._id}>
       <h3>Sink</h3>  
     </div>
   )

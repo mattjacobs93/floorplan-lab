@@ -1,6 +1,6 @@
 function Bedroom (props) {
   return (
-    <div>
+    <div id={"bedroom"+props.bedNum}>
       <h3>Bedroom {props.bedNum}</h3>   
     </div>
   )

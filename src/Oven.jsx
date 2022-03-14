@@ -1,6 +1,6 @@
 function Oven (props) {
   return (
-    <div>
+    <div id={props._id}>
       <h3>Oven</h3>  
     </div>
   )

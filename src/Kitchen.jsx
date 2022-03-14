@@ -3,10 +3,10 @@ import Sink from "./Sink"
 
 function Kitchen (props) {
   return (
-    <div>
+    <div id={props._id}>
       <h3>Kitchen</h3>
-      <Oven />
-      <Sink />
+      <Oven _id="oven" />
+      <Sink _id="sink" />
     </div>
   )
 }
